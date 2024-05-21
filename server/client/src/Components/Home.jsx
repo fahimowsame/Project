@@ -15,7 +15,7 @@ function Home() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:8800/api/data/allpost');
+            const response = await axios.get('https://flood-project-gkjp.onrender.com/api/data/allpost');
             // Slice the response data to get only the first five items
             const firstFiveData = response.data.slice(0, 5);
             setFloodData(firstFiveData);

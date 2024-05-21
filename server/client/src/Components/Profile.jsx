@@ -9,7 +9,7 @@ function Profile() {
 
     const handleLogout = async () => {
         try {
-            await axios.post("http://localhost:8800/api/auth/logout", {}, { withCredentials: true });
+            await axios.post("https://flood-project-gkjp.onrender.com/api/auth/logout", {}, { withCredentials: true });
             localStorage.removeItem("user");
             updateUser(null);
             navigate("/");
