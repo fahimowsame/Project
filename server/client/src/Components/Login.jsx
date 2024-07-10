@@ -19,7 +19,7 @@ const LoginPage = () => {
     const password = formData.get('password');
   
     try {
-      const res = await axios.post("https://flood-project-gkjp.onrender.com/api/auth/login", {
+      const res = await axios.post("https://localhost:8800/api/auth/login", {
         username,
         password
       });

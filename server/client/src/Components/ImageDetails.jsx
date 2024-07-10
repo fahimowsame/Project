@@ -10,7 +10,7 @@ function ImageDetails() {
 
     async function downloadImage() {
         try {
-            const response = await axios.get(`https://flood-project-gkjp.onrender.com/api/data/${id}`);
+            const response = await axios.get(`https://localhost:8800/api/data/${id}`);
             const imageData = response.data;
             if (imageData) {
                 setImage({

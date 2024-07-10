@@ -1,0 +1,21 @@
+/* src/Pin/style.css */
+.popup-content {
+    width: 150px !important; /* Add !important to override default Leaflet styles */
+    height: 100px; /* Adjust the height as needed */
+    display: flex;
+    gap: 20px;
+  }
+  
+  .popup-content img {
+    width: 64px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 4px; /* Adjust as needed */
+  }
+  
+  .popup-content .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

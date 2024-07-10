@@ -19,7 +19,7 @@ function Signup() {
 
     try {
         // const apiRequest = axios.create({baseUrl : 'http://localhost:8800/api', withCredentials : true });
-        const res = await axios.post("https://flood-project-gkjp.onrender.com/api/auth/register", {
+        const res = await axios.post("https://localhost:8800/api/auth/register", {
             username, email, password
         })
         navigate("/login")
