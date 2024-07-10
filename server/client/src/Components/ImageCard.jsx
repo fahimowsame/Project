@@ -36,7 +36,7 @@ const ImageCard = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`https://localhost:8800/api/data/country/${country}?page=${page}`);
+      const response = await axios.get(`https://flood-project-ahb0.onrender.com/api/data/country/${country}?page=${page}`);
       const newData = response.data;
       if (newData.length === 0) {
         setHasMore(false);
