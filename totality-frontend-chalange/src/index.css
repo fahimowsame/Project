@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typewriter {
+  0% { width: 0; }
+  70% { width: 100%; }
+  85%, 100% { width: 0; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: white; }
+}
+
+.animate-typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 4s steps(40, end) infinite, blink 0.75s step-end infinite;
+}
